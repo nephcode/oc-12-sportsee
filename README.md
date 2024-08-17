@@ -1,4 +1,4 @@
-![Cover](https://github.com/nephcode/underconstruction/blob/main/images/github/githubReadmeHeader.png)
+![Cover](https://kpkfzczpavanzocxzyta.supabase.co/storage/v1/object/public/oc-react/readme-header-oc-react-12.png)
 
 <!-- ∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴ -->
 
@@ -42,4 +42,4 @@ git branch release
 
 ```
 
-![Cover](https://github.com/nephcode/underconstruction/blob/main/images/github/githubReadmeFooter.png)
+![Cover](https://kpkfzczpavanzocxzyta.supabase.co/storage/v1/object/public/oc-react/readme-footer-oc-react-12.png)
