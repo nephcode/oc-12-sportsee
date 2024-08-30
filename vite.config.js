@@ -1,15 +1,20 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:5000', // Remplacez par l'URL de votre backend
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
-  },
-});
+const API_URLS = {
+  development: "http://localhost:3001",
+  production: "http://localhost:3000"
+}
+
+// https://vitejs.dev/config/
+export default defineConfig(({ mode }) => {
+  console.log(`vite running in mode ${mode}`)
+
+  return {
+    plugins: [react()],
+    define: {
+      URL_API: JSON.stringify(API_URLS[mode])
+    }
+  }
+
+})
