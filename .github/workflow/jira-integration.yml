@@ -1,0 +1,28 @@
+name: Jira Integration
+
+on:
+  push:
+    branches:
+      - main
+      - 'feature/*'
+  pull_request:
+    types: [opened, edited, closed, reopened]
+
+jobs:
+  jira:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Extract Jira Issue Keys
+        id: extract_keys
+        uses: atlassian/gajira-extract@v1
+        with:
+          from: ${{ github.event.head_commit.message }}
+
+      - name: Create Jira Comment
+        uses: atlassian/gajira-comment@v1
+        with:
+          issue: ${{ steps.extract_keys.outputs.keys }}
+          body: "Commit pushed: ${{ github.event.head_commit.url }}"
