@@ -1,5 +1,6 @@
+// IMPORTS LIBRARIES AND DEPENDENCIES ==========================================//
 import { createRoot } from 'react-dom/client';
-import './index.css';
+import '../src/scss/global.module.scss';
 import server from './utils/server.js';
 import {
   BrowserRouter as Router,
@@ -8,6 +9,9 @@ import {
   Navigate,
 } from 'react-router-dom';
 import Profile from './pages/Home';
+
+// IMPORT COMPO
+import Header from './layout/Header/index.jsx';
 
 // eslint-disable-next-line no-undef
 console.log(`URL_API: ${URL_API}`);
@@ -19,6 +23,7 @@ if (import.meta.env.MODE === 'development') {
 
 createRoot(document.getElementById('root')).render(
   <Router>
+    <Header />
     <Routes>
       <Route path="/" element={<Navigate to="/12" />} />
       <Route path="/:id" element={<Profile />} />

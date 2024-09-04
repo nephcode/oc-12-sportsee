@@ -1,7 +1,7 @@
-import apple from '/public/assets/apple.png'
-import protein from '/public/assets/protein.png'
-import fire from '/public/assets/fire.png'
-import cheeseburger from '/public/assets/cheeseburger.png'
+import glucides from '../assets/diet/glucides.png'
+import proteines from '../assets/diet/proteines.png'
+import calories from '../assets/diet/calories.png'
+import lipides from '../assets/diet/lipides.png'
 
 /**
  * Class representing a user.
@@ -32,28 +32,28 @@ class User {
             {
                 name: 'Calories',
                 measure: 'kCal',
-                img: fire,
+                img: calories,
                 quantity: data.keyData.calorieCount,
                 backgroundColor: 'rgba(255, 0, 0, 0.1)',
             },
             {
                 name: 'Proteines',
                 measure: 'g',
-                img: protein,
+                img: proteines,
                 quantity: data.keyData.proteinCount,
                 backgroundColor: 'rgba(74, 184, 255, 0.1)',
             },
             {
                 name: 'Glucides',
                 measure: 'g',
-                img: apple,
+                img: glucides,
                 quantity: data.keyData.carbohydrateCount,
                 backgroundColor: 'rgba(249, 206, 35, 0.1)',
             },
             {
                 name: 'Lipides',
                 measure: 'g',
-                img: cheeseburger,
+                img: lipides,
                 quantity: data.keyData.lipidCount,
                 backgroundColor: 'rgba(253, 81, 129, 0.1)',
             }
