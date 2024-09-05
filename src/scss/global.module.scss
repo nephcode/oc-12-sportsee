@@ -1,0 +1,50 @@
+//========================================= OC-12 SPORTSEE ===========//
+// _GLOBAL ===========================================================//
+//==================================== By NEAH ================ 2024 =//
+@use "./colors.module.scss" as colors;
+@use "./typo.module.scss" as typo;
+
+:root {
+    font-size: typo.$fontSizeRoot;
+    /*color-scheme: light dark;*/
+    min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: colors.$backgroundSite;
+    font-family: typo.$fontDefault;
+    color: colors.$colorBlack;
+    min-height: 100vh;
+    // DARL MODE & LIGHT MODE
+    //color: light-dark(colors.$backgroundSiteLight, colors.$backgroundSiteDark);
+    //background-color: light-dark(colors.$backgroundSiteLight, colors.$backgroundSiteDark);
+
+    [id="root"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        //margin: 0px auto;
+        min-height: 100vh;
+
+        main {
+            flex: 1;
+            max-width: 1024px;
+            font-family: typo.$fontDefault;
+            //margin: 0px auto 50px;
+            padding: 0px;
+
+            @media screen and (max-width: 1024px) {
+                margin: 0px 10px;
+
+            }
+        }
+    }
+}

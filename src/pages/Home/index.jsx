@@ -1,7 +1,11 @@
+// IMPORTS LIBRARIES AND DEPENDENCIES ==========================================//
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getUserByUserId } from '../../utils/apiHandler';
+//IMPORTS COMPONENTS ===========================================================//
 
+
+// PROFILE COMPONENT ===========================================================//
 const Profile = () => {
   const { id } = useParams();
   const [user, setUser] = useState(null);
