@@ -5,6 +5,7 @@
 @use "./typo.module.scss" as typo;
 
 :root {
+    font-family: typo.$fontDefault;
     font-size: typo.$fontSizeRoot;
     /*color-scheme: light dark;*/
     min-height: 100vh;
@@ -30,9 +31,6 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        //margin: 0px auto;
-        min-height: 100vh;
 
         main {
             flex: 1;
