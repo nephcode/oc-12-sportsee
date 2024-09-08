@@ -1,9 +1,14 @@
 // IMPORTS LIBRARIES AND DEPENDENCIES ==========================================//
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './home.scss'
+import './home.scss';
 //IMPORTS COMPONENTS ===========================================================//
-import { getActivityByUserId, getAverageSessionsByUserId, getUserByUserId, getPerformanceByUserId } from '../../utils/apiHandler';
+import {
+  getActivityByUserId,
+  getAverageSessionsByUserId,
+  getUserByUserId,
+  getPerformanceByUserId,
+} from '../../utils/apiHandler';
 import Activity from '../../components/Activity';
 import AverageSessions from '../../components/AverageSessions';
 import Performance from '../../components/Performance';
@@ -22,13 +27,13 @@ const Profile = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setLoading(true)
-    setError(null)
+    setLoading(true);
+    setError(null);
     Promise.all([
       getActivityByUserId(id),
       getAverageSessionsByUserId(id),
       getUserByUserId(id),
-      getPerformanceByUserId(id)
+      getPerformanceByUserId(id),
     ])
       .then(([userActivity, userSessions, userData, userPerformance]) => {
         setUser(userData);
@@ -38,10 +43,11 @@ const Profile = () => {
       })
       .catch(() => {
         setError(new Error('API is not available. Please try again later.'));
-      }).finally(() => setLoading(false))
+      })
+      .finally(() => setLoading(false));
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, []);
 
   if (isLoading) return <p className="loader">Chargement...</p>;
   if (error) return <p className="error-message">{error.message}</p>;
@@ -49,16 +55,16 @@ const Profile = () => {
   return (
     <section>
       <div>
-        <div className='profileHeader'>
+        <div className="profileHeader">
           <span>Bonjour </span>
           <span>{user?.firstName}</span>
           <div>Félicitation ! Vous avez explosé vos objectifs hier 👏</div>
         </div>
 
-        <div className='charts-and-data'>
+        <div className="charts-and-data">
           <div className="charts-layout">
             <div className="charts">
-              <div className='activity'>
+              <div className="activity">
                 <Activity data={activity?.sessions} />
               </div>
               <div className="average-sessions">
@@ -69,18 +75,18 @@ const Profile = () => {
                 <Performance data={performance} />
               </div>
               <div className="objectif">
-                <span>Objectif</span>
+                <span className="legendScore">Score</span>
                 <Score data={user?.score} />
               </div>
             </div>
           </div>
           <div className="key-data">
-            {user?.keyDatas.map(item => <Keydata key={item.name} data={item} />)}
+            {user?.keyDatas.map((item) => (
+              <Keydata key={item.name} data={item} />
+            ))}
           </div>
         </div>
-
       </div>
-
     </section>
   );
 };

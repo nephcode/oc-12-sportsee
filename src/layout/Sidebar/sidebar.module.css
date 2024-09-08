@@ -11,9 +11,10 @@
   height: 100%;
   width: 110px;
   left: 0;
-  top: 0;
+  top: 90px;
   position: fixed;
   box-shadow: rgba(196, 196, 196, 0.5);
+  z-index: 100;
 }
 .sidebar div {
   display: flex;

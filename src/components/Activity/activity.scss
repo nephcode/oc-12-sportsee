@@ -1,3 +1,7 @@
+@use "../../scss/variable.module.scss";
+@use "../../scss/colors.module.scss";
+
+
 div.activity {
     .recharts-wrapper {
         .recharts-legend-wrapper {
@@ -26,7 +30,7 @@ div.activity {
 
                     span {
                         font-size: 14px;
-                        color: #74798c;
+                        color: colors.$colorTypoGrey ;
                         margin-right: 20px;
                     }
                 }

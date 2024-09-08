@@ -14,9 +14,10 @@
     height: 100%;
     width: 110px;
     left: 0;
-    top: 0;
+    top: 90px;
     position: fixed;
     box-shadow: colors.$colorSecondary;
+    z-index: 100;
 
     div {
         display: flex;

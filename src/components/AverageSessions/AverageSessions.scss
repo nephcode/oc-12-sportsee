@@ -1,3 +1,7 @@
+@use "../../scss/variable.module.scss";
+@use "../../scss/colors.module.scss";
+
 div.average-sessions {
-    background-color:#ff0000;
+    background-color: colors.$colorMain;
+    margin-bottom: 30px;
 }

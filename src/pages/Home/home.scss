@@ -30,8 +30,8 @@
     .charts {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        width: 80%;
+        justify-content: space-between;
+        width: 90%;
 
         .activity {
             width: 100%;
@@ -86,14 +86,14 @@
             align-items: center;
             position: relative;
 
-            span {
+            .legendScore {
                 position: absolute;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 15px;
                 line-height: 24px;
-                left: 50px;
-                top: 10px;
+                left: 5%;
+                top: 5%;
             }
         }
     }

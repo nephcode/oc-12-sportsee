@@ -1,7 +1,13 @@
+@use "../../scss/variable.module.scss";
+@use "../../scss/colors.module.scss";
+
 div.objectif {
+    background-color: colors.$colorGreyBackground;
+
     .recharts-wrapper {
         .recharts-legend-wrapper {
             text-align: center;
+            width: 100%;
 
             .score-container {
                 display: flex;
@@ -9,19 +15,26 @@ div.objectif {
                 align-content: center;
                 justify-content: center;
                 height: 100%;
+                width: 100%;
+                background-color: colors.$backgroundSite;
+                border-radius: 50%;
 
 
-                span.score {
-                    font-size: 26px;
-                    font-weight: 800;
+                .score {
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: colors.$colorTypoBlack;
+                    width: 100%;
+                    height: 100%;
                 }
 
                 p.description {
-                    font-size: 16px;
-                    color: #74798c;
-                    padding-left: 10%;
-                    padding-right: 10%;
-                    line-height: 26px;
+                    font-size: 1rem;
+                    color: colors.$colorTypoGrey;
+                    padding-bottom: 75px;
                 }
             }
         }

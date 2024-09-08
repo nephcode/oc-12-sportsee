@@ -1,0 +1,29 @@
+div.activity .recharts-wrapper .recharts-legend-wrapper .activity-legend-container {
+  display: flex;
+  align-items: center;
+}
+div.activity .recharts-wrapper .recharts-legend-wrapper .activity-legend-container span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+}
+div.activity .recharts-wrapper .recharts-legend-wrapper .activity-legend-container .activity-legend {
+  display: flex;
+  align-items: center;
+}
+div.activity .recharts-wrapper .recharts-legend-wrapper .activity-legend-container .activity-legend .legend-circle {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+div.activity .recharts-wrapper .recharts-legend-wrapper .activity-legend-container .activity-legend span {
+  font-size: 14px;
+  color: #9B9EAC;
+  margin-right: 20px;
+}
+div.activity .recharts-wrapper .recharts-legend-wrapper .activity-legend-container .flex-1 {
+  flex: 1;
+}/*# sourceMappingURL=activity.css.map */
