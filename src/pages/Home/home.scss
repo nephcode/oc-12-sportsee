@@ -1,0 +1,119 @@
+.profileHeader {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 24px;
+
+        &:nth-child(2) {
+            color: #ff0101;
+            padding-left: 10px;
+        }
+    }
+
+    div {
+        margin-top: 50px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        width: 100%;
+    }
+}
+
+.charts-layout {
+    display: flex;
+
+    .charts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80%;
+
+        .activity {
+            width: 100%;
+            height: 320px;
+            margin-bottom: 50px;
+            border-radius: 5px;
+            background: #FBFBFB;
+            box-shadow: 0px 2px 4px 0px #00000005;
+        }
+
+        .average-sessions {
+            display: flex;
+            flex-direction: column;
+            min-width: 354px;
+            width: 30%;
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px #00000005;
+            position: relative;
+
+            span {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                padding: 10px;
+                color: #FFF;
+                height: 50px;
+                position: absolute;
+                z-index: 2;
+            }
+        }
+
+        .performance-chart {
+            min-width: 354px;
+            width: 30%;
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px #00000005;
+            margin-bottom: 50px;
+        }
+
+        .objectif {
+            min-width: 354px;
+            width: 30%;
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px 0px #00000005;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            span {
+                position: absolute;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                left: 50px;
+                top: 10px;
+            }
+        }
+    }
+}
+
+.key-data {
+    min-width: 258px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 680px;
+}
+
+.charts-and-data {
+    display: flex;
+}
+
+.error-message,
+.loader {
+    margin-top: 120px;
+    margin-left: 160px;
+}

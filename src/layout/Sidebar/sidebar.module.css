@@ -1,0 +1,48 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #020203;
+  height: 100%;
+  width: 110px;
+  left: 0;
+  top: 0;
+  position: fixed;
+  box-shadow: rgba(196, 196, 196, 0.5);
+}
+.sidebar div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 316px;
+}
+.sidebar div button {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar div button img {
+  width: 64px;
+  height: 64px;
+}
+.sidebar p {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  writing-mode: vertical-rl;
+  writing-mode: sideways-lr;
+  text-orientation: sideways;
+  z-index: 1;
+}/*# sourceMappingURL=sidebar.module.css.map */

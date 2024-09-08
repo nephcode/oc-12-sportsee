@@ -1,0 +1,55 @@
+@use "../../scss/variable.module.scss";
+@use "../../scss/colors.module.scss";
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: colors.$backgroundFooter;
+    height: 100%;
+    width: 110px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    box-shadow: colors.$colorSecondary;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 316px;
+
+        button {
+            background-color: colors.$colorWhite;
+            border-radius: 5px;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+
+    p {
+        color: colors.$colorTypoWhite;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8rem;
+        writing-mode: vertical-rl;
+        writing-mode: sideways-lr;
+        text-orientation: sideways;
+        z-index: 1;
+    }
+}

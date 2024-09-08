@@ -12,6 +12,7 @@ import Profile from './pages/Home';
 
 // IMPORT COMPO
 import Header from './layout/Header/index.jsx';
+import Sidebar from './layout/Sidebar/index.jsx';
 
 // eslint-disable-next-line no-undef
 console.log(`URL_API: ${URL_API}`);
@@ -28,5 +29,6 @@ createRoot(document.getElementById('root')).render(
       <Route path="/" element={<Navigate to="/12" />} />
       <Route path="/:id" element={<Profile />} />
     </Routes>
+    <Sidebar />
   </Router>
 );

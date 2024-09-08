@@ -1,0 +1,29 @@
+div.objectif {
+    .recharts-wrapper {
+        .recharts-legend-wrapper {
+            text-align: center;
+
+            .score-container {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                height: 100%;
+
+
+                span.score {
+                    font-size: 26px;
+                    font-weight: 800;
+                }
+
+                p.description {
+                    font-size: 16px;
+                    color: #74798c;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}

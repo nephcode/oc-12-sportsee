@@ -1,38 +1,18 @@
-import './header.module.scss';
+import header from './header.module.scss';
 import logo from '../../assets/common/logo.png';
 
 // HEADER COMPONENT ========================================//
 const Header = () => {
   return (
-    <header className="header">
-      <div className="logo">
-        <img src={logo} className="header__logo" />
+    <nav className={header.header}>
+      <a><img src={logo} alt="Logo" /> </a>
+      <div>
+        <a href="#">Accueil</a>
+        <a href="#">Profil</a>
+        <a href="#">Réglage</a>
+        <a href="#">Communauté</a>
       </div>
-      <nav className="header__nav">
-        <ul className="nav-list">
-          <li className="nav-item">
-            <a href="/" className="header__nav-link">
-              Accueil
-            </a>
-          </li>
-          <li className="header__nav-item">
-            <a href="#" className="header__nav-link">
-              Profil
-            </a>
-          </li>
-          <li className="header__nav-item">
-            <a href="#" className="header__nav-link">
-              Réglage
-            </a>
-          </li>
-          <li className="header__nav-item">
-            <a href="#" className="header__nav-link">
-              Communauté
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    </nav>
   );
 };
 export default Header;
